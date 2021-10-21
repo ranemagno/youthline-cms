@@ -1,0 +1,175 @@
+/*
+
+Theme Name: Custom Youthline Theme
+
+Theme URI: http://rraneighh.com/custom-themes/youthline
+
+Author: Rane Magno
+
+Author URI: hhttp://rraneighh.com
+
+Description: Custom Theme for Youthline - a non-profit organization for supporting youths in the community.
+
+Version: 1.0.0
+
+License: GNU General Public License v2 or later
+
+Tags: minimal, cool, bold, bright
+
+*/
+
+
+/* Setup */
+:root {
+  --ff-primary: 'Heebo', sans-serif;
+  --fc-primary: rgb(27, 27, 27);
+  --youthline-blue-dark: rgb(13, 67, 117);
+  --youthline-blue-light: rgb(21, 171, 236);
+  --black: rgb(10, 10, 10);
+  --white: rgb(246, 246, 246);
+}
+
+body {
+  background-color: rgba(246, 246, 246, 0.6);
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+a,
+.text-link {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  color: var(--black)
+}
+
+/* Overide Wordpress Styles */
+#header {
+  display: none;
+}
+hr {
+  display: none;
+}
+
+
+/* Nav */
+nav {
+  width: 100%;
+  height: 60px;
+  /* background-color: turquoise; */
+}
+li {
+  float: left;
+}
+.menu {
+  width: 100%;
+  float: right;
+}
+.menu ul {
+  float: right;
+}
+.menu li {
+  padding: 20px 30px 0 0;
+  text-transform: lowercase;
+}
+/* Nav */
+
+/* Landing Container */
+.c-landing{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-text {
+  font-size: 7rem;
+  margin-top: -5%;
+}
+/* Landing Container */
+
+/* Feature Article */
+.c-feature-article {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+.feature-image {
+  height: 100%;
+  width: 50%;
+}
+.feature-text {
+  height: 100%;
+  width: 50%;
+  /* background-color: rgb(80, 202, 205); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  text-align: center;
+  width: 70%;
+}
+#featureBtn {
+  margin-top: 5%;
+  padding: 10px 20px;
+  border: none;
+  color: var(--white);
+  background-color: var(--youthline-blue-light);
+}
+/* Feature Article */
+
+/* Feature Posts */
+.c-feature-posts {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.main-post {
+  height: 100vh;
+  width: 50%;
+  background-color: rgb(250, 251, 187)
+}
+.sub-posts {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+.post {
+  height: 45%;
+  width: 40%;
+  /* border: 1px solid black; */
+  /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05); */
+  transition: 1s ease;
+  border-radius: 10px;
+}
+.post:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.post-image {
+  height: 70%;
+  width: 100%;
+}
+.post-blurb {
+  width: 90%;
+  margin: 1.2rem;
+  font-size: .8rem;
+}
+.post-blurb h3 {
+  margin-bottom: .7rem;
+}
