@@ -28,9 +28,7 @@
   </div>
 
   <div class="c-feature-article">
-    <div class="feature-image">
-      <img src="" alt="Youth of New Zealand">
-    </div>
+    <div class="feature-image"></div>
     <div class="feature-text">
       <div class="text">
         <h1>Need Some Help?</h1>
@@ -41,24 +39,43 @@
   </div>
 
   <div class="c-feature-posts">
-    <div class="main-post">
-      <div class="main-image">
-
-      </div>
-    </div>
     <div class="sub-posts">
       <div class="post">
-        <div class="post-image">
-          <img src="" alt="Great Image">
-        </div>
+        <div class="post-image"></div>
         <div class="post-blurb">
           <h3>Counselling</h3>
           <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
         </div>
       </div>
-      <div class="post"></div>
-      <div class="post"></div>
-      <div class="post"></div>
+      <div class="post">
+        <div class="post-image"></div>
+        <div class="post-blurb">
+          <h3>Counselling</h3>
+          <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-image"></div>
+        <div class="post-blurb">
+          <h3>Counselling</h3>
+          <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-image"></div>
+        <div class="post-blurb">
+          <h3>Counselling</h3>
+          <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-post">
+      <div class="main-post-image"></div>
+      <div class="main-post-blurb">
+        <h3>Good2Great</h3>
+        <p>Good2Great is about recognising your inner awesome and unleashing it on the world. We all encounter tricky situations, and this programme gives you simple tools to manage them.</p>
+      </div>
+      <button type="button" name="button" id="mainPostBtn">Learn More</button>
     </div>
   </div>
   

@@ -55,6 +55,12 @@ a,
   color: var(--black)
 }
 
+button {
+  border: none;
+  color: var(--white);
+  background-color: var(--youthline-blue-light);
+}
+
 /* Overide Wordpress Styles */
 #header {
   display: none;
@@ -105,10 +111,15 @@ li {
   height: 50vh;
   width: 100%;
   display: flex;
+  margin-bottom: 10vh;
 }
 .feature-image {
   height: 100%;
   width: 50%;
+  background-image: url('https://via.placeholder.com/300');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .feature-text {
   height: 100%;
@@ -125,9 +136,6 @@ li {
 #featureBtn {
   margin-top: 5%;
   padding: 10px 20px;
-  border: none;
-  color: var(--white);
-  background-color: var(--youthline-blue-light);
 }
 /* Feature Article */
 
@@ -140,7 +148,7 @@ li {
 .main-post {
   height: 100vh;
   width: 50%;
-  background-color: rgb(250, 251, 187)
+  /* background-color: cadetblue; */
 }
 .sub-posts {
   height: 100vh;
@@ -155,21 +163,46 @@ li {
   width: 40%;
   /* border: 1px solid black; */
   /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05); */
-  transition: 1s ease;
-  border-radius: 10px;
+  /* transition: 1s ease; */
+  /* border-radius: 10px; */
 }
-.post:hover {
+/* .post:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
+} */
 .post-image {
   height: 70%;
   width: 100%;
+  background-color: aquamarine;
+  background-image: url('https://via.placeholder.com/300');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .post-blurb {
+  height: 20%;
   width: 90%;
   margin: 1.2rem;
-  font-size: .8rem;
+  font-size: 1.2vh;
 }
 .post-blurb h3 {
   margin-bottom: .7rem;
+}
+.main-post-image {
+  height: 70%;
+  width: 95%;
+  margin: 2.5% 0 0 1%;
+  background-image: url('https://via.placeholder.com/500');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-post-blurb {
+  margin: 1.2rem;
+}
+.main-post-blurb h3 {
+  margin-bottom: .7rem;
+}
+#mainPostBtn {
+  margin: 0 0 0 1.2rem;
+  padding: 10px 20px;
 }
