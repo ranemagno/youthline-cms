@@ -74,7 +74,6 @@ hr {
 nav {
   width: 100%;
   height: 60px;
-  /* background-color: turquoise; */
 }
 li {
   float: left;
@@ -106,6 +105,8 @@ li {
 }
 /* Landing Container */
 
+
+
 /* Feature Article */
 .c-feature-article {
   height: 50vh;
@@ -124,7 +125,6 @@ li {
 .feature-text {
   height: 100%;
   width: 50%;
-  /* background-color: rgb(80, 202, 205); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,6 @@ li {
 .main-post {
   height: 100vh;
   width: 50%;
-  /* background-color: cadetblue; */
 }
 .sub-posts {
   height: 100vh;
@@ -159,8 +158,9 @@ li {
   justify-content: space-around;
 }
 .post {
-  height: 45%;
-  width: 40%;
+  height: 400px;
+  width: 300px;
+  margin: 0 10px;
   /* border: 1px solid black; */
   /* box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05); */
   /* transition: 1s ease; */
@@ -172,7 +172,6 @@ li {
 .post-image {
   height: 70%;
   width: 100%;
-  background-color: aquamarine;
   background-image: url('https://via.placeholder.com/300');
   background-position: center;
   background-size: cover;
@@ -186,6 +185,9 @@ li {
 }
 .post-blurb h3 {
   margin-bottom: .7rem;
+}
+#postBtn {
+  padding: 10px 20px;
 }
 .main-post-image {
   height: 70%;
@@ -205,4 +207,21 @@ li {
 #mainPostBtn {
   margin: 0 0 0 1.2rem;
   padding: 10px 20px;
+}
+
+/* Footer */
+.c-footer {
+  height: 10vh;
+  border-top: 1px solid var(--black);
+  margin-top: 10%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page_item a {
+  color: var(--youthline-blue-light);
+}
+.pagenav ul li {
+  float: none;
 }

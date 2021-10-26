@@ -24,7 +24,7 @@
   </nav>
 
   <div class="c-landing">
-    <h1 class="head-text">Changing Lives</h1>
+    <h1 class="head-text"><?php echo get_theme_mod("headline_setting") ?></h1>
   </div>
 
   <div class="c-feature-article">
@@ -33,41 +33,30 @@
       <div class="text">
         <h1>Need Some Help?</h1>
         <p>We're here to help, and are here for you. Feel free to send us a text on 234.</p>
-        <button type="button" name="button" id="featureBtn">Get Help</button>
+        <button type="button" name="featureBtn" id="featureBtn">Get Help</button>
       </div>
     </div>
   </div>
 
   <div class="c-feature-posts">
     <div class="sub-posts">
+      <?php
+      if (have_posts() ) :
+        while (have_posts() ) : the_post(); ?>
+      <a href="<?php the_permalink(); ?>">
       <div class="post">
         <div class="post-image"></div>
         <div class="post-blurb">
-          <h3>Counselling</h3>
-          <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
+          <h3><?php the_title() ?></h3>
+          <p><?php the_excerpt(); ?></p>
+          <button type="button" name="postBtn" id="postBtn"></button>
         </div>
       </div>
-      <div class="post">
-        <div class="post-image"></div>
-        <div class="post-blurb">
-          <h3>Counselling</h3>
-          <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
-        </div>
-      </div>
-      <div class="post">
-        <div class="post-image"></div>
-        <div class="post-blurb">
-          <h3>Counselling</h3>
-          <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
-        </div>
-      </div>
-      <div class="post">
-        <div class="post-image"></div>
-        <div class="post-blurb">
-          <h3>Counselling</h3>
-          <p>Learn more about our counselling services across New Zealand. We provide counselling by phone, text, chat, Skype and in person. Most of our services are free, the rest are affordable.</p>
-        </div>
-      </div>
+      </a>
+    <?php endwhile;
+        else : echo '<p>There are no posts!</p>';
+    endif;
+    ?>
     </div>
     <div class="main-post">
       <div class="main-post-image"></div>
@@ -75,10 +64,11 @@
         <h3>Good2Great</h3>
         <p>Good2Great is about recognising your inner awesome and unleashing it on the world. We all encounter tricky situations, and this programme gives you simple tools to manage them.</p>
       </div>
-      <button type="button" name="button" id="mainPostBtn">Learn More</button>
     </div>
   </div>
-  
+
 </body>
+
+<?php get_footer(); ?>
 
 </html>
