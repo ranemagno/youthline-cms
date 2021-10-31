@@ -2,18 +2,97 @@
 
 Theme Name: Custom Youthline Theme
 
-Theme URI: http://rraneighh.com/wordpress-themes/youthline
+Theme URI: http://rraneighh.com/custom-themes/youthline
 
 Author: Rane Magno
 
-Author URI: hhttp://rraneighh.com
+Author URI: http://rraneighh.com
 
-Description: A custom theme for youthline - a non-profit organization for supporting youths in the community.
+Description: Custom Theme for Youthline - a non-profit organization for supporting youths in the community.
 
 Version: 1.0.0
 
 License: GNU General Public License v2 or later
 
-Tags: minimal, cool, bold, non-profit, charity, volunteer, blog, news
+Tags: minimal, cool, bold, bright
 
 */
+
+/* CSS Reset */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+
+:root {
+    --primary-font: 'Monstserrat', sans-serif;
+    --primary-blue: #171B4B;
+}
+
+/* Wordpress get_header() leaves weird spacing at top */
+#header {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+
+body {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    font-family: var(--primary-font);    
+}
+
+.landing-cont {
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url('images/kid.jpg');
+    background-position: right;
+    background-size: cover;
+}
+
+.landing-cont h1 {
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 6.5rem;
+    font-weight: 700;
+    padding: 17% 0 0 8.5%;
+
+}
+.landing-cont button {
+    background-color: white;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    padding: 22px 31px 22px 33px;
+    border-radius: 25px;
+    margin: 4% 0 0 8.7%;
+}
+.support-cont {
+    width: 100%;
+}
+
+.support-cont h1 {
+    color: var(--primary-blue);
+    font-family: var(--primary-font);
+    font-size: 6.5rem;
+    font-weight: 700;
+    /* background-color: turquoise; */
+    margin: 5% 0 0 5%;
+}
+.option-cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: yellow; */
+    margin: 5% 0;
+}
+.option {
+    height: 500px;
+    width: 400px;
+    background-color: violet;
+}

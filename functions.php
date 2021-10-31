@@ -1,12 +1,12 @@
 <?php
 
-// add_theme_support('post-thumbnails');
-//
-// function youthline_theme_assets() {
-//   wp_enqueue_style('youthline-style', get_stylesheet_uri());
-// }
-//
-// // change headline text
+add_theme_support('post-thumbnails');
+
+function youthline_theme_assets() {
+  wp_enqueue_style('youthline-style', get_stylesheet_uri());
+}
+
+// change headline text
 // function headline_options($wp_customize) {
 //
 //   $wp_customize->add_section("headline_section", array(
