@@ -18,7 +18,7 @@ Tags: minimal, cool, bold, bright
 
 */
 
-/* CSS Reset */
+/* CSS Reset and Initial Styles*/
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all: unset;
     display: revert;
@@ -27,6 +27,13 @@ Tags: minimal, cool, bold, bright
 :root {
     --primary-font: 'Monstserrat', sans-serif;
     --primary-blue: #171B4B;
+    --secondary-blue: #55e0ee;
+
+}
+
+h1,
+h2 {
+  color: var(--primary-blue);
 }
 
 /* Wordpress get_header() leaves weird spacing at top */
@@ -41,7 +48,7 @@ body {
     width: 100%;
     position: absolute;
     top: 0;
-    font-family: var(--primary-font);    
+    font-family: var(--primary-font);
 }
 
 .landing-cont {
@@ -59,7 +66,6 @@ body {
     font-size: 6.5rem;
     font-weight: 700;
     padding: 17% 0 0 8.5%;
-
 }
 .landing-cont button {
     background-color: white;
@@ -71,17 +77,26 @@ body {
     border-radius: 25px;
     margin: 4% 0 0 8.7%;
 }
-.support-cont {
-    width: 100%;
-}
 
-.support-cont h1 {
+
+/* -------------------------------------------------------------------------- */
+
+
+/* Services */
+.service-cont {
+    width: 100%;
+    margin-bottom: 10%;
+}
+.service-header {
     color: var(--primary-blue);
     font-family: var(--primary-font);
     font-size: 6.5rem;
     font-weight: 700;
-    /* background-color: turquoise; */
-    margin: 5% 0 0 5%;
+    text-align: left;
+    margin: 10% 8% 0 8%
+}
+.s-2 {
+  text-align: center;
 }
 .option-cont {
     width: 100%;
@@ -94,5 +109,187 @@ body {
 .option {
     height: 500px;
     width: 400px;
-    background-color: violet;
+    /* background-color: violet; */
+}
+.icon {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* background-color: aqua; */
+}
+.option img {
+  width: 25%;
+}
+.label {
+  width: 100%;
+  height: 10%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+  padding-left: .1rem;
+}
+.description {
+  /* background-color: aqua; */
+  margin: 17% 15% 5% 15%;
+  text-align: center;
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+.search-btn {
+  width: 100%;
+  height: 10%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchLocation {
+  color: var(--secondary-blue);
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .5rem;
+  padding-left: .5rem;
+}
+
+.posts-cont {
+  text-align: center;
+}
+.posts-cont h1 {
+  color: var(--primary-blue);
+  font-family: var(--primary-font);
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin: 5% 0 0 5%;
+}
+.block-cont {
+  width: 100%;
+  height: 65vh;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+.blocks {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  grid-template-rows: 5% 1fr 1fr 5%;
+  grid-template-areas:
+  ". . . . ."
+  ". block1 block2 block3 ."
+  ". block4 block2 block3 ."
+  ". . . . .";
+}
+.block {
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.block-header {
+  width: 100%;
+  margin: 5%;
+}
+.block-header h2 {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+.block-text {
+  width: 100%;
+  margin: 0 5%;
+  padding-bottom: 5%;
+}
+.block-text p {
+  color: black;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/* Support Our Youth
+    same classes as service cont - below is extra donate button */
+.donate-cont {
+  width: 100%;
+  height: 10vh;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3%;
+}
+#donateBtn {
+  background-color: var(--primary-blue);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  padding: 30px 56px 30px 58px;
+  border-radius: 25px;
+}
+
+
+/* Newsletter */
+.newsletter-cont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsletter-img {
+  width: 50%;
+  background-image: url("images/people.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.newsletter-form {
+  width: 50%;
+  /* background-color: rgb(112, 147, 100); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.block-1 {
+  background-image: url("images/person.jpg");
+  grid-area: block1;
+}
+.block-2 {
+  background-image: url("images/person.jpg");
+  grid-area: block2;
+}
+.block-3 {
+  background-image: url("images/person.jpg");
+  grid-area: block3;
+}
+.block-4 {
+  background-image: url("images/person.jpg");
+  grid-area: block4;
 }
