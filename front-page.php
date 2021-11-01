@@ -2,7 +2,7 @@
 
   <div class="landing-cont">
     <h1>We are <br> here  to listen.</h1>
-    <button>Need Help?</button>
+    <button id="landingBtn">Need Help?</button>
   </div>
 
   <div class="service-cont">
@@ -101,7 +101,7 @@
   </div>
 
   <div class="service-cont">
-    <div class="service-header s-2">
+    <div class="service-header h-2">
       <h1>Support Our Youth</h1>
     </div>
     <div class="option-cont">
@@ -147,11 +147,26 @@
     <div class="newsletter-img">
     </div>
     <div class="newsletter-form">
-      form
+      <div class="service-header h-3">
+        <h1>Keep Posted</h1>
+      </div>
+      <div class="label l-2">
+        <h2>Subscribe to our newsletter</h2>
+      </div>
+      <form class="" action="" method="post">
+        <label for="nameInput">Name</label>
+        <input type="text" name="nameInput" placeholder="Your Name">
+        <label for="emailInput">Email</label>
+        <input type="email" name="emailInput" placeholder="emailexample@gmail.com">
+        <label for="phoneInput">Phone Number</label>
+        <input type="text" name="phoneInput" placeholder="021 234 5678">
+        <button type="button" name="formBtn" id="formBtn">Subscribe</button>
+      </form>
+
     </div>
   </div>
-
-  <footer>Footer Things</footer>
 </body>
+
+<?php get_footer(); ?>
 
 </html>

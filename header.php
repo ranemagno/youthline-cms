@@ -15,5 +15,29 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 <?php wp_head(); ?>
+<nav id="navigation">
+  <ul id="headerUl">
+    <li>
+      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/youthlineLogo.png" alt="Youthline Logo" id="logo">
+    </li>
+    <?php $menu_args = ['theme_location' => 'primary', 'menu_class' => "navbar-nav"]; ?>
+    <?php wp_nav_menu($menu_args); ?>
+    <li>
+      <button type="button" name="donateNavBtn" id="donateNavBtn">Donate</button>
+    </li>
+  </ul>
+
+</nav>
+
+<script type="text/javascript">
+var prevScrollpos = window.pageYOffset;window.onscroll =
+  function() {  var currentScrollPos = window.pageYOffset;  if
+  (prevScrollpos > currentScrollPos) {   
+    document.querySelector("#navigation").style.top = "0";
+  } else {   
+    document.querySelector("#navigation").style.top = "-10vh"; 
+  } 
+  prevScrollpos = currentScrollPos;}
+
+</script>

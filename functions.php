@@ -6,7 +6,7 @@ function youthline_theme_assets() {
   wp_enqueue_style('youthline-style', get_stylesheet_uri());
 }
 
-add_action('wp_enqueue_scripts', 'custom_theme_assets');
+add_action('wp_enqueue_scripts', 'youthline_theme_assets');
 
 register_nav_menus(['primary'=> 'Primary Menu']);
 
