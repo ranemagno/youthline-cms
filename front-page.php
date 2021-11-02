@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
   <div class="landing-cont">
-    <h1>We are <br> here  to listen.</h1>
+    <h1><?php echo get_theme_mod('headline_setting');?></h1>
+    <!-- <h1>We are <br> here  to listen.</h1> -->
     <button id="landingBtn">Need Help?</button>
   </div>
 
@@ -63,38 +64,32 @@
     <div class="block-cont">
       <div class="blocks">
 
-        <div class="block block-1">
-          <div class="block-header">
-            <h2>Post header here...</h2>
+        <?php
+          if (have_posts() ) :
+            $counter = 0;
+            while (have_posts() ) : the_post();
+            $counter++;
+            $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+            if ($counter > 4) {
+              break;
+            }
+        ?>
+
+          <div class="block block-<?php echo $counter; ?>"
+            style="background-image: url('<?php echo $url; ?>');" >
+            <div class="block-header">
+              <h2><?php the_title(); ?></h2>
+            </div>
+            <div class="block-text">
+              <p><?php the_excerpt(); ?></p>
+            </div>
           </div>
-          <div class="block-text">
-            <p>Short description on this post that will probably have a text limit or something...</p>
-          </div>
-        </div>
-        <div class="block block-2">
-          <div class="block-header">
-            <h2>Post header here...</h2>
-          </div>
-          <div class="block-text">
-            <p>Short description on this post that will probably have a text limit or something...</p>
-          </div>
-        </div>
-        <div class="block block-3">
-          <div class="block-header">
-            <h2>Post header here...</h2>
-          </div>
-          <div class="block-text">
-            <p>Short description on this post that will probably have a text limit or something...</p>
-          </div>
-        </div>
-        <div class="block block-4">
-          <div class="block-header">
-            <h2>Post header here...</h2>
-          </div>
-          <div class="block-text">
-            <p>Short description on this post that will probably have a text limit or something...</p>
-          </div>
-        </div>
+
+        <?php
+            endwhile;
+          else : echo '<h2>There are no posts!</h2>';
+        endif;
+        ?>
 
       </div>
     </div>
