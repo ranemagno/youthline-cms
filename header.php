@@ -15,7 +15,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_head(); ?>
 <nav id="navigation">
   <ul id="headerUl">
     <li>
@@ -41,3 +40,4 @@ var prevScrollpos = window.pageYOffset;window.onscroll =
   prevScrollpos = currentScrollPos;}
 
 </script>
+<?php wp_head(); ?>

@@ -239,6 +239,11 @@ body {
   padding-left: .5rem;
 }
 
+
+/* -------------------------------------------------------------------------- */
+
+
+/* Recent Stories */
 .posts-cont {
   text-align: center;
 }
@@ -364,20 +369,20 @@ body {
   width: 43%;
   margin: 0 0 0 7%;
 }
-form {
+.home-form {
   width: 80%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
 }
-label {
+.home-form-label {
   width: 100%;
   margin-bottom: .5rem;
   font-weight: 800;
   color: var(--primary-blue);
 }
-input {
+.home-form-input {
   width: 100%;
   padding: 1rem 2rem 1rem .9rem;
   margin-bottom: 3rem;

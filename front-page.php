@@ -148,13 +148,13 @@
       <div class="label l-2">
         <h2>Subscribe to our newsletter</h2>
       </div>
-      <form class="" action="" method="post">
-        <label for="nameInput">Name</label>
-        <input type="text" name="nameInput" placeholder="Your Name">
-        <label for="emailInput">Email</label>
-        <input type="email" name="emailInput" placeholder="emailexample@gmail.com">
-        <label for="phoneInput">Phone Number</label>
-        <input type="text" name="phoneInput" placeholder="021 234 5678">
+      <form class="home-form" action="" method="post">
+        <label class="home-form-label" for="nameInput">Name</label>
+        <input class="home-form-input" type="text" name="nameInput" placeholder="Your Name">
+        <label fclass="home-form-label" or="emailInput">Email</label>
+        <input class="home-form-input" type="email" name="emailInput" placeholder="emailexample@gmail.com">
+        <label class="home-form-label" for="phoneInput">Phone Number</label>
+        <input class="home-form-input" type="text" name="phoneInput" placeholder="021 234 5678">
         <button type="button" name="formBtn" id="formBtn">Subscribe</button>
       </form>
 
